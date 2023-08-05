@@ -1,1 +1,77 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Hairline&family=Bungee+Inline&family=Bungee+Outline&family=Bungee+Shade&family=Bungee+Spice&family=Dancing+Script:wght@700&family=Instrument+Serif&family=Oxygen&family=Roboto:wght@300;400;500&display=swap');
+*{
+ scroll-behavior: smooth;
+ margin: 0;
+ padding: 0;
+}
+body{
+  //background-color: #FF3CAC;
+ // background-image: linear-gradient(15deg, #242424 0%, #000000 99%, #000000 100%);
+    color: white;
+  }
+  .dark-mode {
+ h1,h2,h3,h4,h5{
+  color: #444 !important;
+ }
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%) !important;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+  transition: background-image 0.5s ease-in-out;
+    color: white;
+   .col-sm{
+    p, span{
+      color: rgba(0,0,0,255) !important;
+    }
+   }
+  }
+
+  @keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(64, 100%, 50%, 0.2),
+        0 0 0.125em hsla(64, 92%, 47%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(69, 100%, 50%, 0.5),
+        0 0 0.125em hsla(73, 75%, 46%, 0.5),
+        -0.5em -0.125em 0.25em hsla(83, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(69, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(64, 100%, 50%, 0.5),
+        0 0 0.125em hsla(81, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(76, 100%, 50%, 0.2),
+        0 0 0.125em hsla(69, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';

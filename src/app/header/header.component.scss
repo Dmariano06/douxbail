@@ -1,0 +1,344 @@
+main{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: linear-gradient(15deg, #000000 0%, #0f1215 99%, #000000 100%);
+}
+.collapse{
+    justify-content: center;
+    padding-right: 50px;
+}
+h5{
+    text-align: start;
+    -webkit-background-clip: text; /* Permet de clipper le fond du texte */
+    -webkit-text-fill-color: transparent;
+    font-family: 'Bungee Spice', cursive;
+    background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    font-size: 18px;
+}
+a{
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 20px;
+    color: #c0c0c0;
+    font-weight: bold;
+
+}
+
+hr{
+    color: #c0c0c0;
+    width: 600px;
+}
+
+  .scroll-animation {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 2.5s ease, transform 3s ease;
+  }
+  .scroll-animation.animate {
+    opacity: 1;
+    transform: translateX(0px);
+   
+  }
+  .scroll-animation1 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 2.5s ease, transform 3s ease;
+  }
+  .scroll-animation1.animate {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+.cover{
+    animation: fade-in 2s ease-out;
+    font-family: 'Dancing Script', cursive;
+    justify-content: center;
+   
+    #phonelogo{
+      display: none;
+    }
+
+    img{
+    
+    margin-left:25%;
+    margin-top:3%;
+    width: 50%;
+        
+    }
+    span{
+        position: absolute;
+        top:440px;
+        color: black;
+        right: 165px;
+        font-size: 550px;
+    }
+    animation: fade-in 3s ease-out;
+   background-repeat: no-repeat;
+   height: 100%;
+    background-size: contain;
+    
+    background-image: url('../../assets/hautburger.png');
+}
+
+.middle{
+
+  margin-bottom: 550px;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+
+}
+iframe{
+    width: 100%;
+    height: 600px;
+}
+
+
+main{
+  p{
+    text-transform: uppercase;
+    line-height: 1.25;
+    font-family: 'Oxygen', cursive;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  overflow: hidden;
+    .title{
+        span{
+            background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+            radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+        -webkit-background-clip: text; /* Permet de clipper le fond du texte */
+        -webkit-text-fill-color: transparent;
+            color: #e6c619;
+            text-align: center;
+            letter-spacing: 3px;
+            font-family: 'Bungee Spice', cursive;
+        }
+      padding-top: 100px;
+      padding-bottom: 100px;
+      text-align: center;
+        h1{
+          animation: light;
+          color: white;
+          font-family: 'Bungee Shade', cursive;
+            font-size: 32px;
+            padding-bottom: 40px;
+            animation: lights 5s 750ms linear infinite;
+        }
+        h2{
+          color: white;
+          font-size: 28px;
+          font-family: 'Bungee Inline', cursive;
+        }
+    }
+    .container-fluid{
+        padding-top: 50px;
+    p{
+        width: 600px;
+    }
+    .text2{
+        padding-left: 180px;
+    }
+    }
+    .col-sm{
+        h1{
+            text-align: start;
+        }
+        p{
+            text-align: start;
+            padding-top: 50px;
+            font-size: 18px;
+            letter-spacing: 2px;
+            font-weight: 600;
+            color: rgba(226,214,137,255);
+        }
+        padding-bottom: 150px;
+    }
+    
+}
+.container{
+  img {
+    --s: 250px;   /* the size of the image */
+    --b: 8px;     /* the border thickness*/
+    --g: 0px;    /* the gap */
+    --c: #4ECDC4; 
+    --d: #e6c619;
+    --e: rgb(89, 103, 104);/* the color */    
+    cursor: pointer;
+    transition: .3s;
+  }
+  img:hover {
+    outline: var(--b) solid var(--d);
+    outline-offset: var(--g);
+  }
+
+  
+ 
+  font-family: 'Bungee', cursive;
+  color: rgb(216, 216, 216);
+  h1{
+    font-size: 35px;
+    font-family: 'Bungee', cursive;
+    color: whitesmoke;
+  }
+    padding-left: 15%;
+    font-size: 20px;
+}
+@media (min-width:900px)
+{
+  .container{
+    img{
+        outline: calc(var(--s)/0.5) solid #0009;
+  outline-offset: calc(var(--s)/-0.5);
+    }
+  }
+}
+.dark-mode{
+  img:hover {
+    outline: var(--b) solid var(--e);
+    outline-offset: var(--g);
+  }
+}
+
+#sectionB{
+  
+  width: 100%;
+  padding-bottom: 250px;
+}
+.come-in {
+    text-align: start;
+    margin-bottom: 250px;
+}
+.parallax-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    h1{
+      color: white;
+      padding-top: 10%;
+      text-align: center;
+      font-size: 9em;
+      animation: lights 7s 1050ms linear infinite;
+      font-family: 'Bungee';
+    }
+  }
+  
+  .parallax-section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .parallax-section:nth-child(even) {
+    background: transparent; /* Couleur d'arrière-plan pour les sections paires */
+  }
+  
+  .parallax-section:nth-child(odd) {
+    background: transparent; /* Couleur d'arrière-plan pour les sections impaires */
+  }
+  .middle{
+    padding-top: 1000px;
+    margin-bottom: 200px;
+    span{
+        background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    -webkit-background-clip: text; /* Permet de clipper le fond du texte */
+    -webkit-text-fill-color: transparent;
+        color: #e6c619;
+        text-align: center;
+        letter-spacing: 3px;
+        font-family: 'Bungee Spice', cursive;
+    }
+  }
+ 
+  .cover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+span{
+
+        color: black!important;
+
+    }
+    
+  }
+  .dark-mode{
+    .container{
+      font-family: 'Bungee', cursive;
+      color: rgb(37, 37, 37);
+      h1{
+color: rgb(37, 37, 37);
+        font-family: 'Bungee', cursive;
+      
+      }
+    }
+    .cover{
+      
+  background-image: url('../../assets/cover_light2.png');
+      img{
+        margin-top: 25%;
+        margin-left: 5% !important;
+      }
+    }
+    @media (min-width:2000px)
+    {
+      .cover{
+      margin-left: 11%;
+      }
+    }
+    @media (max-width:2000px){
+      .cover{
+        margin: auto;
+      }
+    }
+
+  }
+  @media (max-width: 650px){
+    .cover{
+      background-size: contain;
+      height: 100%;
+      margin: auto;
+      width: 100%;
+      overflow: hidden;
+      background-repeat: no-repeat;
+      background-image: url('../../assets/logophone2.png');
+      img{
+        opacity: 0;
+      }}
+      #meal{
+        width: 300px;
+        height: 300px;
+        #phonelogo{
+          display: contents;
+          width: 500px;
+        }
+    }
+    .dark-mode{
+      .container{
+        font-family: 'Bungee Spice', cursive;
+      }
+      .cover{
+        background-image: url('../../assets/logophone2.png');
+      }
+    }
+  }
+  @media(min-width: 1800px)
+    {
+      .dark-mode{
+   .cover{
+   background-size: cover;
+    width: 69%;
+    height: 74%;
+   }
+    }
+  }
+      
+    

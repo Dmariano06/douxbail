@@ -1,0 +1,58 @@
+
+.collapse{
+    justify-content: center;
+    padding-right: 100px;
+
+}
+a{
+  cursor: pointer;
+    margin-left: 50px;
+    font-size: 20px;
+    padding: 20px;
+    color: #c0c0c0;
+
+}
+hr{
+    color: #c0c0c0;
+}
+
+.navbar {
+  font-family: 'Bungee', cursive;
+/* Incl*/
+  }
+  .fixed-bottom{
+    opacity: 0;
+  
+  }
+  .container{
+    margin-top: 100px;
+  }
+ @media  (max-width: 500px) {
+  .collapse{
+    display:none
+  }
+  .phonebar{
+    ul{
+    text-decoration: none;
+    list-style: none;
+    }
+  }
+ }
+@media (max-width: 1500px)
+{
+  .fixed-top{
+    display: none;
+  }
+.fixed-bottom{
+  a{
+   width: 2%;
+  }
+  opacity: 1;
+
+}
+}
+.dark-mode{
+  a{
+    color: #444;
+  }
+}

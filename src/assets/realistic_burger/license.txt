@@ -1,0 +1,11 @@
+Model Information:
+* title:	Realistic Burger
+* source:	https://sketchfab.com/3d-models/realistic-burger-1f3e42de8f7a4b308067ad92147e269a
+* author:	neshallads (https://sketchfab.com/neshallads)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Realistic Burger" (https://sketchfab.com/3d-models/realistic-burger-1f3e42de8f7a4b308067ad92147e269a) by neshallads (https://sketchfab.com/neshallads) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

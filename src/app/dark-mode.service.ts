@@ -13,4 +13,7 @@ export class DarkModeService {
   toggleDarkMode(): void {
     this.isDarkMode.next(!this.isDarkMode.value);
   }
+  toggleDarkMode1(): void {
+    this.isDarkMode.next(!this.isDarkMode.value);
+  }
 }

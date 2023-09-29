@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
 import { DarkModeService } from './dark-mode.service';
+import { Router } from '@angular/router';
 
 
 
@@ -10,7 +11,7 @@ import { DarkModeService } from './dark-mode.service';
 })
 
 export class AppComponent implements OnInit {
-  constructor(public darkModeService: DarkModeService){}
+  constructor(public darkModeService: DarkModeService, private router: Router){}
   ngOnInit(): void {
     const parallaxSections = document.querySelectorAll('.parallax-section');
 
@@ -62,6 +63,7 @@ window.addEventListener('scroll', () => {
       }
     });
   }
+  isDarkMode = false;
   handleClick(sectionId: string) {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -69,19 +71,33 @@ window.addEventListener('scroll', () => {
     }
   }
   @ViewChild('button') buttonElement: ElementRef | undefined;
+  @ViewChild('button1') button1Element: ElementRef | undefined;
   
   toggleDarkMode(): void {
-    let i = 0;
-    const button = this.buttonElement?.nativeElement;
-   
-    this.darkModeService.toggleDarkMode();
-    if (i === 0) { 
-      button.innerText = 'LIGHT MODE';
-      i++; 
-    } else {    
-      button.innerText = 'DARK MODE';
-      i--;
-    } 
-  }
   
+    const button = this.buttonElement?.nativeElement;
+    const button1 = this.button1Element?.nativeElement;
+
+    this.darkModeService.toggleDarkMode();
+    this.isDarkMode = !this.isDarkMode;
+    if (this.isDarkMode) {
+      button.innerText = 'LIGHT';
+      button1.innerText = 'LIGHT';
+      
+    } else {
+      button.innerText = 'DARK';
+      button1.innerText = 'DARK';
+    }
+  }
+
+  goToCurrentPage() {
+    this.router.navigateByUrl('/header').then(() => {
+      setTimeout(() => {
+        const element = document.getElementById('top');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }
 }

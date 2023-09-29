@@ -10,11 +10,8 @@ main{
 }
 h5{
     text-align: start;
-    -webkit-background-clip: text; /* Permet de clipper le fond du texte */
-    -webkit-text-fill-color: transparent;
-    font-family: 'Bungee Spice', cursive;
-    background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+    color: #e46b16;
+    font-family: 'Bungee', cursive;
     font-size: 18px;
 }
 a{
@@ -23,14 +20,11 @@ a{
     padding: 20px;
     color: #c0c0c0;
     font-weight: bold;
-
 }
-
 hr{
     color: #c0c0c0;
     width: 600px;
 }
-
   .scroll-animation {
     opacity: 0;
     transform: translateX(50px);
@@ -39,7 +33,6 @@ hr{
   .scroll-animation.animate {
     opacity: 1;
     transform: translateX(0px);
-   
   }
   .scroll-animation1 {
     opacity: 0;
@@ -60,19 +53,11 @@ hr{
   }
 .cover{
     animation: fade-in 2s ease-out;
-    font-family: 'Dancing Script', cursive;
-    justify-content: center;
-   
-    #phonelogo{
-      display: none;
-    }
-
     img{
-    
     margin-left:25%;
     margin-top:3%;
     width: 50%;
-        
+    animation: fade-in 5s ease-in-out; 
     }
     span{
         position: absolute;
@@ -83,27 +68,22 @@ hr{
     }
     animation: fade-in 3s ease-out;
    background-repeat: no-repeat;
-   height: 100%;
-    background-size: contain;
-    
-    background-image: url('../../assets/hautburger.png');
+   height: 100vh;
+    background-size: cover;
+  //  margin-top: -800px;
+    background-image: url('https://cdn.discordapp.com/attachments/406419836785262592/1139072402584776724/58b0fa5c-8f98-47b3-b8c1-ed6b4a2f28a0.png');
 }
-
 .middle{
-
   margin-bottom: 550px;
   background-repeat: no-repeat;
   width: 100%;
   height: 300px;
   background-size: cover;
-
 }
 iframe{
     width: 100%;
     height: 600px;
 }
-
-
 main{
   p{
     text-transform: uppercase;
@@ -115,30 +95,27 @@ main{
   overflow: hidden;
     .title{
         span{
-            background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-            radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-        -webkit-background-clip: text; /* Permet de clipper le fond du texte */
-        -webkit-text-fill-color: transparent;
-            color: #e6c619;
+            color: #e46b16;
             text-align: center;
             letter-spacing: 3px;
-            font-family: 'Bungee Spice', cursive;
+            font-family: 'Bungee', cursive;
         }
       padding-top: 100px;
       padding-bottom: 100px;
       text-align: center;
         h1{
-          animation: light;
-          color: white;
-          font-family: 'Bungee Shade', cursive;
+          //animation: light;
+          //color: white;
+          font-family: 'Bungee', cursive;
             font-size: 32px;
             padding-bottom: 40px;
-            animation: lights 5s 750ms linear infinite;
+          //  animation: lights 5s 750ms linear infinite;
+          color: white;
         }
         h2{
           color: white;
           font-size: 28px;
-          font-family: 'Bungee Inline', cursive;
+          font-family: 'Bungee', cursive;
         }
     }
     .container-fluid{
@@ -160,29 +137,12 @@ main{
             font-size: 18px;
             letter-spacing: 2px;
             font-weight: 600;
-            color: rgba(226,214,137,255);
+            color: white;
         }
         padding-bottom: 150px;
-    }
-    
+    } 
 }
 .container{
-  img {
-    --s: 250px;   /* the size of the image */
-    --b: 8px;     /* the border thickness*/
-    --g: 0px;    /* the gap */
-    --c: #4ECDC4; 
-    --d: #e6c619;
-    --e: rgb(89, 103, 104);/* the color */    
-    cursor: pointer;
-    transition: .3s;
-  }
-  img:hover {
-    outline: var(--b) solid var(--d);
-    outline-offset: var(--g);
-  }
-
-  
  
   font-family: 'Bungee', cursive;
   color: rgb(216, 216, 216);
@@ -191,27 +151,21 @@ main{
     font-family: 'Bungee', cursive;
     color: whitesmoke;
   }
-    padding-left: 15%;
     font-size: 20px;
+    img{
+      border: 7px solid  #e46b16;
+    }
 }
-@media (min-width:900px)
-{
+
+.dark-mode{
+
   .container{
     img{
-        outline: calc(var(--s)/0.5) solid #0009;
-  outline-offset: calc(var(--s)/-0.5);
+      border: 7px solid  #5269ff;
     }
   }
 }
-.dark-mode{
-  img:hover {
-    outline: var(--b) solid var(--e);
-    outline-offset: var(--g);
-  }
-}
-
 #sectionB{
-  
   width: 100%;
   padding-bottom: 250px;
 }
@@ -228,80 +182,52 @@ main{
       padding-top: 10%;
       text-align: center;
       font-size: 9em;
-      animation: lights 7s 1050ms linear infinite;
       font-family: 'Bungee';
     }
   }
-  
   .parallax-section {
     position: relative;
     height: 100%;
     width: 100%;
   }
-  
   .parallax-section:nth-child(even) {
-    background: transparent; /* Couleur d'arrière-plan pour les sections paires */
+    background: transparent; 
   }
-  
   .parallax-section:nth-child(odd) {
-    background: transparent; /* Couleur d'arrière-plan pour les sections impaires */
+    background: transparent;
   }
   .middle{
-    padding-top: 1000px;
-    margin-bottom: 200px;
+    padding-top: 660px;
     span{
-        background-image:radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
-        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
-    -webkit-background-clip: text; /* Permet de clipper le fond du texte */
-    -webkit-text-fill-color: transparent;
-        color: #e6c619;
+      color: #e46b16;
         text-align: center;
         letter-spacing: 3px;
-        font-family: 'Bungee Spice', cursive;
+        font-family: 'Bungee', cursive;
     }
   }
- 
-  .cover{
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-span{
-
-        color: black!important;
-
-    }
-    
-  }
-  .dark-mode{
+      .dark-mode{
+        span{
+          color: #444 !important;
+        }
+        h1,h2{
+          font-family: 'Bungee', cursive;
+          color: #5269ff !important;
+        }
     .container{
       font-family: 'Bungee', cursive;
       color: rgb(37, 37, 37);
-      h1{
-color: rgb(37, 37, 37);
-        font-family: 'Bungee', cursive;
-      
-      }
+     
     }
     .cover{
-      
-  background-image: url('../../assets/cover_light2.png');
+  background-image: url('../../assets/cover_test.JPG');
+  background-size: cover;
+  
       img{
         margin-top: 25%;
         margin-left: 5% !important;
       }
-    }
-    @media (min-width:2000px)
-    {
-      .cover{
-      margin-left: 11%;
-      }
-    }
-    @media (max-width:2000px){
-      .cover{
-        margin: auto;
-      }
-    }
-
-  }
-  @media (max-width: 650px){
+    }}
+  @media (max-width: 800px){
     .cover{
       background-size: contain;
       height: 100%;
@@ -313,32 +239,36 @@ color: rgb(37, 37, 37);
       img{
         opacity: 0;
       }}
-      #meal{
-        width: 300px;
-        height: 300px;
-        #phonelogo{
-          display: contents;
-          width: 500px;
-        }
-    }
     .dark-mode{
       .container{
-        font-family: 'Bungee Spice', cursive;
+        font-family: 'Bungee', cursive;
       }
       .cover{
         background-image: url('../../assets/logophone2.png');
+        background-size: contain;
       }
     }
   }
-  @media(min-width: 1800px)
-    {
-      .dark-mode{
-   .cover{
-   background-size: cover;
-    width: 69%;
-    height: 74%;
-   }
+@media (max-width:1600px){
+    .cover{
+      height:100%;
+      background-size: contain !important;
     }
   }
-      
-    
+
+  @media(max-width: 900px) {
+    #parallax-container{
+      height: 50vh;
+      h1{
+        padding-top: 50%;
+        font-size: 4em;
+      }
+    }
+    .middle{
+      padding-top: 950px;
+    }
+    #meal{
+      width: 300px;
+      height: 300px;
+  }
+  }

@@ -1,14 +1,16 @@
-
 .collapse{
-    justify-content: center;
-    padding-right: 100px;
-
+  justify-content: center;
+}
+main{
+    background-image: linear-gradient(15deg, #000000 0%, #2e2e2e 99%, #000000 100%);
+}
+footer{
+  color: white;
 }
 a{
   cursor: pointer;
-    margin-left: 50px;
+
     font-size: 20px;
-    padding: 20px;
     color: #c0c0c0;
 
 }
@@ -18,41 +20,13 @@ hr{
 
 .navbar {
   font-family: 'Bungee', cursive;
-/* Incl*/
-  }
-  .fixed-bottom{
-    opacity: 0;
-  
-  }
-  .container{
-    margin-top: 100px;
-  }
- @media  (max-width: 500px) {
-  .collapse{
-    display:none
-  }
-  .phonebar{
-    ul{
-    text-decoration: none;
-    list-style: none;
-    }
-  }
- }
-@media (max-width: 1500px)
-{
-  .fixed-top{
-    display: none;
-  }
-.fixed-bottom{
-  a{
-   width: 2%;
-  }
-  opacity: 1;
 
+ul {
+  margin-right: 8%;
 }
-}
+  }
 .dark-mode{
   a{
-    color: #444;
+    color: white;
   }
 }

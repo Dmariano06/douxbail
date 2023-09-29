@@ -1,100 +1,36 @@
-*{
-  overflow: hidden;
 
-}
-
-main{
-
-  height: 100vh;
-}
-
-nav{
-  margin: auto;
-  a{
-    padding: 10px;
-    margin: auto;
+  main{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
   }
   h1{
     color: white;
-   opacity: 0;
-    font-family: 28px;
+    font-family: 'Bungee';
+    font-size: 50px;
+    line-height: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+  h2{
+    font-size: 29px;
+    color: white;
     font-family: 'Bungee';
   }
-  margin-bottom: 0;
-  margin-top: 10%;
-  display: flex;
-}
-@keyframes lights {
-  0% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-  
-  30% { 
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  40% { 
-    color: hsl(230, 100%, 95%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  70% {
-    color: hsl(230, 80%, 90%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
-  }
-  
-  100% {
-    color: hsl(230, 40%, 80%);
-    text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
-  }
-  
-}
-
-h1 {
-  margin: auto;
-  font-size: 3.5rem;
-  font-weight: 300;
-  animation: lights 5s 750ms linear infinite;
-}
-  img{
+  .c-item {
+    height: 480px;
    
-    width: 200px;
-    border: 2px solid white;
-    height:262px;
-    transition: all ease-in-out 0.6s;
   }
-  a:hover{
-    img{
-    width: 400px;
-    height: 565px;
-    }
-    transition: all ease-in-out 1.2s;
- h1{
-  text-align: center;
-  opacity: 1;
-  transition: all ease-in-out 1.3s;
+  .c-img {
+    height: 100%;
+    border: 1px solid white;
+    margin: auto;
+    object-fit: cover;
+  //  filter: brightness(0.6);
+  }
+ #hero-carousel{
+  margin-top: 5%;
+  margin-bottom: 14%;
  }
-  }
-
+ 
